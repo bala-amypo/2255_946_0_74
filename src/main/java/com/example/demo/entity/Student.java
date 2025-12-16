@@ -1,5 +1,9 @@
 package com.example.demo.entity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
+@Entity
 public class Student {
 
     private int id;
@@ -32,5 +36,13 @@ public class Student {
         this.cgpa = cgpa;
     }
 
-    public Student()
+    public Student(int id,String stuname,String stuemail,float cgpa){
+        this.id = id;
+        this.stuname = stuname;
+        this.stuemail = stuemail;
+        this.cgpa = cgpa;
+    }
+
+    public Student(){
+    }
 }
