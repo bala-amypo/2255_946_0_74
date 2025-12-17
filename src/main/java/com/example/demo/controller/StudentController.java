@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
-import java.util.List;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +27,7 @@ public class StudentController {
     }
 
     @GetMapping("/fetch_data_id/{id}")
-    public Student fetchDataById(@PathVariable int id){
+    public Optional fetchDataById(@PathVariable int id){
         return ser.fetchDataById(id);
     }
 }

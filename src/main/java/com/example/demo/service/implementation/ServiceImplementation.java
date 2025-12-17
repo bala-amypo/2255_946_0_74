@@ -1,6 +1,6 @@
 package com.example.demo.service.implementation;
 
-import java.util.List;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class ServiceImplementation implements StudentService {
         return repo.findAll();
     }
 
-    public Student fetchDataById(int id) {
-        return repo.fi
+    public Optional fetchDataById(int id) {
+        return repo.findById(id);
     }
 }
