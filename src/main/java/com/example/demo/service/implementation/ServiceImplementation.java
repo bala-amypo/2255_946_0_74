@@ -23,4 +23,8 @@ public class ServiceImplementation implements StudentService {
     public List<Student> fetchRecord() {
         return repo.findAll();
     }
+
+    public Student fetchDataById(int id) {
+        return repo.fi
+    }
 }

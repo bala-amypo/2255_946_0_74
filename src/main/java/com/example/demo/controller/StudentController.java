@@ -26,8 +26,8 @@ public class StudentController {
         return ser.fetchRecord();
     }
 
-    @GetMapping("/fetch_data_id")
-    public Student fetchDataById(@PathV){
-        return 
+    @GetMapping("/fetch_data_id/{id}")
+    public Student fetchDataById(@PathVariable int id){
+        return ser.fetchDataById(id);
     }
 }
