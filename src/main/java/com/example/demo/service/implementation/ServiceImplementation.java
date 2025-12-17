@@ -24,7 +24,7 @@ public class ServiceImplementation implements StudentService {
         return repo.findAll();
     }
 
-    public Optional fetchDataById(int id) {
+    public Optional<Student> fetchDataById(int id) {
         return repo.findById(id);
     }
 }
