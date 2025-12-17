@@ -32,5 +32,7 @@ public class StudentController {
     }
 
     @PutMapping("/update_data")
-    public 
+    public ? updateDataById(@PathVariable id,@RequestBody Student stu){
+        stu.setI
+    }
 }
